@@ -1,0 +1,14 @@
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner {
+    background-image: url(/img/ban5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+}
+
+.about,.work {
+    background-color: rgb(250, 227, 231);
+}
