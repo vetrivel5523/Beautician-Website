@@ -3,12 +3,11 @@
 }
 
 .navbar-brand {
-    color: rgb(122, 25, 119);
+    color: black;
 }
 
-.banner {
-    background-image: url(/img/ban5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 150px 0;
+img,.ban2 {
+    padding: -50px;
+    width: 100%;
+    height: auto;
 }
