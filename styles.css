@@ -49,13 +49,13 @@ img,.ban2 {
     padding: 0 1rem;
 }
 
-.vegetable-list {
+.work-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
 
-.vegetable-item {
+.work-item {
     width: 200px;
     background-color: #f9f9f9;
     padding: 10px;
@@ -65,23 +65,23 @@ img,.ban2 {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
-.vegetable-item img {
+.work-item img {
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
-.vegetable-item h3 {
+.work-item h3 {
     margin: 0;
     font-size: 18px;
 }
 
-.vegetable-item p {
+.work-item p {
     margin: 5px 0;
     color: #888;
 }
 
-.vegetable-item button {
+.work-item button {
     padding: 8px 16px;
     background-color: #2d6203;
     color: white;
@@ -91,13 +91,9 @@ img,.ban2 {
     transition: background-color 0.3s ease;
 }
 
-.vegetable-item button:hover {
-    background-color: #2d6203;
-}
-
 /* Media query for responsiveness */
 @media only screen and (max-width: 320px) {
-    .vegetable-item {
+    .work-item {
         width: 100%;
     }
 }
