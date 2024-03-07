@@ -48,3 +48,56 @@ img,.ban2 {
 #availableworks {
     padding: 0 1rem;
 }
+
+.vegetable-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.vegetable-item {
+    width: 200px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.vegetable-item img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.vegetable-item h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.vegetable-item p {
+    margin: 5px 0;
+    color: #888;
+}
+
+.vegetable-item button {
+    padding: 8px 16px;
+    background-color: #2d6203;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.vegetable-item button:hover {
+    background-color: #2d6203;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 320px) {
+    .vegetable-item {
+        width: 100%;
+    }
+}
