@@ -99,18 +99,22 @@ img,
     }
 }
 
+@media screen and (min-width: 600px) {
+    .review-form {
+        max-width: 600px;
+    }
+}
+
 .review-form {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 .review-form label {
     font-weight: bold;
 }
-
 .review-form input[type="text"],
 .review-form textarea {
     width: 100%;
@@ -120,85 +124,42 @@ img,
     border-radius: 5px;
     box-sizing: border-box;
 }
-
 .review-form input[type="submit"] {
-    background-color: rgb(19, 18, 18);
+    background-color: rgb(18, 17, 17);
     color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
-
 .review-form input[type="submit"]:hover {
-    background-color: rgb(25, 25, 25);
+    background-color: rgb(17, 17, 17);
 }
-
 .reviews-container {
     max-width: 600px;
     margin: 20px auto;
 }
-
 .review {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
     margin-bottom: 10px;
+    position: relative;
 }
-
 .review .name {
     font-weight: bold;
 }
-
 .review .stars {
     color: #ffcc00;
 }
-
-.review-form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
+.remove-review {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #ff0000;
+    color: white;
+    border: none;
     border-radius: 5px;
-}
-
-.review-form label {
-    font-weight: bold;
-}
-
-.review-form input[type="text"],
-.review-form textarea,
-.review-form input[type="number"],
-.review-form input[type="submit"] {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.reviews-container {
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-.review {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-.review .name {
-    font-weight: bold;
-}
-
-.review .stars {
-    color: #ffcc00;
-}
-@media screen and (min-width: 600px) {
-    .review-form {
-        max-width: 600px;
-    }
+    padding: 5px 10px;
+    cursor: pointer;
 }

@@ -218,11 +218,20 @@
                 <p class="name">${name}</p>
                 <p class="stars">Rating: ${'⭐'.repeat(rating)}</p>
                 <p>${comment}</p>
+                <button class="remove-review">Remove</button>
             `;
             reviewsContainer.prepend(review);
 
             // Clear the form fields
             this.reset();
+        });
+
+        // Event delegation to handle remove review button click
+        reviewsContainer.addEventListener('click', function (e) {
+            if (e.target.classList.contains('remove-review')) {
+                const review = e.target.closest('.review');
+                review.remove();
+            }
         });
     </script>
     <footer class="py-3">
