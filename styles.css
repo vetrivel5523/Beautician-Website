@@ -3,7 +3,7 @@
 }
 
 li {
-    padding:0;
+    padding: 0;
     font-size: 16px;
     border: none;
     cursor: pointer;
@@ -39,7 +39,8 @@ li span {
     color: black;
 }
 
-img,.ban2 {
+img,
+.ban2 {
     padding: -50px;
     width: 100%;
     height: auto;
@@ -56,7 +57,7 @@ img,.ban2 {
 }
 
 .work-item {
-    width: 200px;
+    width: 250px;
     background-color: #f9f9f9;
     padding: 10px;
     margin: 10px;
@@ -95,5 +96,109 @@ img,.ban2 {
 @media only screen and (max-width: 320px) {
     .work-item {
         width: 100%;
+    }
+}
+
+.review-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form label {
+    font-weight: bold;
+}
+
+.review-form input[type="text"],
+.review-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.review-form input[type="submit"] {
+    background-color: rgb(19, 18, 18);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.review-form input[type="submit"]:hover {
+    background-color: rgb(25, 25, 25);
+}
+
+.reviews-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.review {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.review .name {
+    font-weight: bold;
+}
+
+.review .stars {
+    color: #ffcc00;
+}
+
+.review-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.review-form label {
+    font-weight: bold;
+}
+
+.review-form input[type="text"],
+.review-form textarea,
+.review-form input[type="number"],
+.review-form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.reviews-container {
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.review {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.review .name {
+    font-weight: bold;
+}
+
+.review .stars {
+    color: #ffcc00;
+}
+@media screen and (min-width: 600px) {
+    .review-form {
+        max-width: 600px;
     }
 }
