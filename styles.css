@@ -143,6 +143,7 @@ img,
 .call {
     bottom: 20px;
     right: 20px;
+    background-color: rgb(47, 185, 231);
 }
 
 /* Dancing animation */
