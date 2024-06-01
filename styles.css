@@ -164,3 +164,26 @@ img,
         transform: rotate(0deg);
     }
 }
+
+.counter-card {
+    width: 100%;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 20px 20px ;
+    background-color: #fff;
+    animation: bounce 1s ease-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.counter {
+    text-align: center;
+}
+
