@@ -5,30 +5,18 @@
 
 .navbar {
     background-color: rgb(37, 37, 37);
-    overflow: hidden;
-    padding: 10px 20px;
-    text-align: center;
-    /* Center align navbar content */
+    padding: 10px;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
-    /* Ensure navbar stays on top */
 }
 
 .navbar-brand {
     font-size: 38px;
     font-weight: bold;
     text-decoration: none;
-    letter-spacing: 2px;
-}
-
-
-
-.col-md-0 p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #333;
+    letter-spacing: 1.5px;
 }
 
 li {
@@ -88,21 +76,13 @@ img,
     padding-bottom: 10px;
 }
 
-#about .img-fluid:hover {
-    transform: scale(1.05);
+.About_content p {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
 }
 
-/* Additional Styles for Text Animation */
-#about .fadeIn {
-    opacity: 0;
-    animation: fadeInAnimation 1s ease forwards;
-}
-
-@keyframes fadeInAnimation {
-    to {
-        opacity: 1;
-    }
-}
 
 .banner {
     background-color: #f9f9ff;
@@ -160,7 +140,7 @@ img,
 .work-item {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.2s, transform 0.2s;
+    transition: opacity 0.1.5s, transform 0.1.5s;
 }
 
 .work-item.animate {

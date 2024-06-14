@@ -30,6 +30,7 @@ document.addEventListener('scroll', () => {
 handleScrollAnimations();
 
 // Function to animate the counter
+// Function to animate the counter
 function animateCounter(id, start, end, duration) {
     let range = end - start;
     let current = start;
@@ -45,13 +46,26 @@ function animateCounter(id, start, end, duration) {
     }, stepTime);
 }
 
-// Set the initial values and start animation
-function startCounters() {
-    animateCounter('makeupCounter', 0, 300, 2000); // Change 300 to your desired value
-    animateCounter('hairCounter', 0, 100, 1500);   // Change 100 to your desired value
-    animateCounter('flowerCounter', 0, 100, 1500); // Change 100 to your desired value
-    animateCounter('customerCounter', 0, 500, 2500); // Change 500 to your desired value
-}
+// Intersection Observer setup
+const observerOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.5 // When half of .counter-section is visible
+};
 
-// Start counting when the page loads
-document.addEventListener('DOMContentLoaded', startCounters);
+const counterSection = document.querySelector('.counter-section');
+
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            // Start counting when .counter-section becomes visible
+            animateCounter('makeupCounter', 0, 300, 2000);   // Change 300 to your desired value
+            animateCounter('hairCounter', 0, 100, 1500);     // Change 100 to your desired value
+            animateCounter('flowerCounter', 0, 100, 1500);   // Change 100 to your desired value
+            animateCounter('customerCounter', 0, 500, 2500); // Change 500 to your desired value
+            observer.unobserve(entry.target); // Stop observing once started
+        }
+    });
+}, observerOptions);
+
+observer.observe(counterSection);
