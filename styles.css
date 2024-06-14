@@ -1,5 +1,6 @@
 * {
     font-family: 'Poppins', sans-serif;
+
 }
 
 .navbar {
@@ -22,14 +23,7 @@
     letter-spacing: 2px;
 }
 
-.col-md-0 {
-    max-width: 100%;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-}
+
 
 .col-md-0 p {
     font-size: 16px;
@@ -80,7 +74,7 @@ img,
 
 /* About Section Styles */
 #about {
-    background-color: #fff;
+    background-color: #f9f9ff;
     padding: 100px 0;
     text-align: center;
 
@@ -90,8 +84,6 @@ img,
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-    /* Makes the image round */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     padding-bottom: 10px;
 }
@@ -112,6 +104,10 @@ img,
     }
 }
 
+.banner {
+    background-color: #f9f9ff;
+    padding-bottom: 20px;
+}
 
 #availableworks {
     padding: 0 1rem;
@@ -135,7 +131,7 @@ img,
 
 .work-item img {
     width: 100%;
-    border-radius: 5px;
+    border-radius: 20px;
     margin-bottom: 10px;
 }
 
@@ -160,6 +156,18 @@ img,
     transition: background-color 0.3s ease;
 }
 
+/*scrool animation*/
+.work-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.work-item.animate {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* Media query for responsiveness */
 @media only screen and (max-width: 320px) {
     .work-item {
@@ -173,57 +181,99 @@ img,
     }
 }
 
+/*counter*/
+.counter {
+    padding-top: 20px;
+    background-color: #f9f9ff;
+}
+
+.counter-section {
+    background-color: #f9f9ff;
+    ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.counter-item {
+    text-align: center;
+    padding: 10px;
+    flex: 1 1 50%;
+    /* Two items per row on medium screens */
+    max-width: 20%;
+}
+
+.counter-value {
+    font-size: 48px;
+    font-weight: bold;
+    color: #343a40;
+    /* Dark grey */
+    animation: count-up 5s ease-out;
+}
+
+.counter-label {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+@keyframes count-up {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .counter-item {
+        flex: 1 1 100%;
+        /* One item per row on smaller screens */
+        max-width: 100%;
+    }
+}
+
 
 /* Footer Styles */
-footer {
+.footer {
     background-color: rgb(37, 37, 37);
-    /* Dark background color */
     color: #fff;
-    /* White text color */
-    padding: 30px 0;
-    /* Padding top and bottom */
-    font-size: 16px;
+    padding: 10px 10px;
     text-align: center;
-    /* Center align text */
     position: relative;
-    /* Position relative for absolute positioning */
+    height: fit-content;
 }
 
-footer p {
-    margin-bottom: 0;
-    /* Remove default margin */
+.center {
+    display: flex;
+    justify-content: center;
 }
 
-.footer-info {
-    position: absolute;
-    /* Position absolute to center text */
-    left: 50%;
-    transform: translateX(-50%);
-    /* Center horizontally */
-    bottom: 10px;
-    /* Distance from bottom */
-}
 
-.footer-info a {
-    color: #fff;
-    /* White color for links */
-    text-decoration: none;
-    /* Remove underline */
-    transition: color 0.3s ease;
-    /* Smooth transition for color change */
-}
+@media (min-width: 600px) {
 
-.footer-info a:hover {
-    color: #f8f9fa;
-    /* Lighter color on hover */
+    .footer .contact-info .left-side {
+        flex: 0 0 calc(50% - 10px);
+        /* Two columns layout */
+        text-align: left;
+        /* Left align text */
+    }
 }
 
 
 /* Add the CSS for floating chat balls here */
 .floating-chat {
     position: fixed;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: #25d366;
     /* WhatsApp green */
@@ -252,13 +302,13 @@ footer p {
 
 /* Positioning chat balls */
 .whatsapp {
-    bottom: 20px;
-    left: 20px;
+    bottom: 5px;
+    left: 10px;
 }
 
 .call {
-    bottom: 20px;
-    right: 20px;
+    bottom: 5px;
+    right: 10px;
     background-color: rgb(47, 185, 231);
 }
 
