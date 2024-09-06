@@ -3,139 +3,186 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KAVI MAKEOVER</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles.css">
+    <title>Kavi Makeover</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="/CSS/styles.css">
 </head>
 
 <body>
-    <nav class="navbar">
-        <a href="#" class="navbar-brand"><span style="color: white;">kavi</span><span style="color: #e83e8c;">
-                Makeover</span></a>
-    </nav>
-    <!-- <section id="home">
-        <div>
-            <p>
-                <img src="/img/main redy.jpg" />
-            </p>
-        </div>  
-    </section> -->
 
-    <section id="about" class="py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <!-- <h2 class="text-center pb-4"><span style="color: black; font-weight: bold;">About</span><span
-                            style="color: #e83e8c; font-weight: bold;">Me</span></h2> -->
-                </div>
-                <div class="col-md-12 text-center">
-                    <img src="/img/About img.jfif" alt="Kavina" class="img-fluid w-50 m-auto pb-3" />
-                </div>
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Kavi Makeover</a>
 
-                <div class="About_content">
-                    <p class="pb-3">Hi Friends & Families❤️,
-                        I am <span style="color: #e83e8c; font-weight: bold;">KAVINA</span> professional Makeup Artist
-                        and having more than 5 years of experience in this
-                        field. Experienced makeup artist skilled in enhancing natural beauty and creating stunning looks
-                        for various occasions. Specializing in bridal, editorial, and special effects makeup, with a
-                        keen eye for detail and a passion for creativity. Dedicated to providing personalized service to
-                        clients, ensuring their vision is brought to life flawlessly.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class=" banner text-center ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class=" home w-75 m-auto text-white">
-                        <a href="https://wa.me/+916383272225?text=HI KAVINA" class="btn btn-dark btn-lg text-uppercase"
-                            target="_blank">book Me</a>
-                    </div>
-                    <div class=" home w-75 m-auto text-white py-3">
-                        <a href="/img/main banner.jpg" class="btn btn-dark btn-lg text-uppercase" target="_blank"
-                            download>Get Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="availableworks" class="bg-light  skills-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2 class="text-center pb-4"><span style="color: black; font-weight: bold;">Services</span><span
-                            style="color: #e83e8c; font-weight: bold;">Offered</span></h2>
-                </div>
-            </div>
-            <div class="work-list">
-                <div class="work-item">
-                    <img src="/img/hd makeup main.jfif" alt="HD MAKEUP">
-                    <h3>HD MAKEUP</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/glossy makeup.jfif" alt="GLOSSY MAKEUP">
-                    <h3>GLOSSY MAKEUP</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/braidmaid1.jpg" alt="BRIDE MAID MAKEUP">
-                    <h3>BRIDE MAID MAKEUP</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/party1.jfif" alt="PARTY LOOK MAKEUP">
-                    <h3>PARTY LOOK MAKEUP</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/mugurthanmain.jpg" alt="WEDDING MAKEUP">
-                    <h3>WEDDING MAKEUP</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/babyshower1.jpg" alt="BABY SHOWER">
-                    <h3>BABY SHOWER</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/Puberty.jpg" alt="PUBERTY MAKEUP">
-                    <h3>PUBERTY MAKEUP</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/hair style.jfif" alt="HAIR STYLES">
-                    <h3>HAIR STYLES</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/hand.webp" alt="HAND MEHANDHI">
-                    <h3>HAND MEHANDHI</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/lm.jpg" alt="LEG MEHANDHI">
-                    <h3>LEG MEHANDHI</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/saree.jfif" alt="SAREE DRAPING">
-                    <h3>SAREE DRAPING</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/flower 2.jpg" alt="FLOWERS DESIGNING">
-                    <h3>FLOWERS DESIGNING</h3>
-                </div>
-                <div class="work-item">
-                    <img src="/img/jewely set.jfif" alt="JEWELLS SET RENT">
-                    <h3>JEWELLS SET RENT</h3>
-                </div>
-            </div>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#DiscoverArt">DiscoverArt</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <img class="bannermain" src="images/main banner-2.png" />
         </div>
     </section>
 
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/About img.jfif" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <br><br>
+            <h3>
+                Hi Friends & Families❤️,
+                I am <span style="color: #6c2243; font-weight: bold;">KAVINA</span> professional Makeup Artist
+                and having more than 5 years of experience in this
+                field. Experienced makeup artist skilled in enhancing natural beauty and creating stunning looks
+                for various occasions. Specializing in bridal, editorial, and special effects makeup, with a
+                keen eye for detail and a passion for creativity. Dedicated to providing personalized service to
+                clients, ensuring their vision is brought to life flawlessly.
+            </h3><br><br>
+            <a href="https://wa.me/+916383272225?text=Hi Kavina" class="btn btn-dark btn-lg text-uppercase"
+                target="_blank">WhatsApp Me</a>
+            <a href="images/main banner.jpg" class="btn btn-dark btn-lg text-uppercase" target="_blank"
+                download>Services Card</a>
+
+        </div>
+    </section>
+
+    <!-- services section design -->
+    <section class="services" id="services">
+        <h2 class="heading"><span>Services</span>Offered</h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <img class="service-image" src="images/hd makeup main.jfif" /><br>
+                <br>
+                <h3>HD MAKEUP</h3>
+                <p>HD makeup became popular with the rise of high-definition photography and television. It's ideal for
+                    special occasions, photoshoots, and film.</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/glossy makeup.jfif" /><br>
+                <br>
+                <h3>GLOSSY MAKEUP</h3>
+                <p>Glossy is a popular makeup finish that helps you achieve a shiny, reflective finish on the skin,
+                    lips, or eyes. </p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/braidmaid1.jpg" /><br>
+                <br>
+                <h3>BRIDE MAID MAKEUP</h3>
+                <p> It can vary from a natural, fresh look to a glamorous look, depending on the style of the wedding
+                    and
+                    the preferences of the bridesmaids.</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/partylook1.jfif" /><br>
+                <br>
+                <h3>PARTY LOOK MAKEUP</h3>
+                <p>Party makeup is a step up from regular makeup that's usually consistent throughout the skin</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/Wedding.jpg" /><br>
+                <br>
+                <h3>WEDDING MAKEUP</h3>
+                <p>It is a specialized type of makeup that's designed to enhance a bride's natural beauty and create a
+                    flawless look that lasts all day.</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/babyshower1.jpg" /><br>
+                <br>
+                <h3>BABY SHOWER</h3>
+                <p> Baby shower makeup is usually softer, natural, and more radiant, aiming to highlight the person's
+                    natural beauty.</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/Puberty.jpg" /><br>
+                <br>
+                <h3>PUBERTY MAKEUP</h3>
+                <p> The focus of puberty makeup is on enhancing natural beauty while addressing common skin concerns
+                    associated with hormonal changes, such as acne, oiliness, or dryness.</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/hair style.jfif" /><br>
+                <br>
+                <h3>HAIR STYLES</h3>
+                <p>A hairstyle is the way someone's hair is cut, arranged, or combed. </p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/hand.webp" /><br>
+                <br>
+                <h3>HAND MEHANDHI</h3>
+                <p> the traditional art of painting the hands, feet or body with a paste made from the powdered, dried
+                    leaves of the henna plant .</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/lm.jpg" /><br>
+                <br>
+                <h3>LEG MEHANDHI</h3>
+                <p>Leg mehndi is a traditional Indian art form of decorating the legs with a paste made from the dried
+                    leaves of the henna plant.</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/saree.jfif" /><br>
+                <br>
+                <h3>SAREE DRAPING</h3>
+                <p>Saree draping is an art form that involves pleating and draping a saree to create a variety of looks.
+                </p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/flower 2.jpg" /><br>
+                <br>
+                <h3>FLOWERS DESIGNING</h3>
+                <p>the art of creating balanced and eye-catching displays using flowers and other plant materials.</p>
+
+            </div>
+            <div class="services-box">
+                <img class="service-image" src="images/jewely set.jfif" /><br>
+                <br>
+                <h3>JEWELLS SET RENT</h3>
+                <p> you to rent jewelry for a special occasion, such as a wedding, instead of buying it.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- counter section design -->
     <section class="counter">
-        <div class="col-md-12">
-            <h2 class="text-center pb-4"><span style="color: black; font-weight: bold;">Completed</span><span
-                    style="color: #e83e8c; font-weight: bold;">Clients</span></h2>
-        </div>
+        <h2 class="heading">Completed <span>Clients</span></h2><br><br><br><br>
         <div class="counter-section">
             <div class="counter-item">
                 <div class="counter-value" id="makeupCounter">0</div>
-                <div class="counter-label"><span style="color:#e83e8c; font-weight: bold;">Makeup Done</span></div>
+                <div class="counter-label"><span style="color:#6c2243; font-weight: bold;">Makeup Done</span></div>
             </div>
             <div class="counter-item">
                 <div class="counter-value" id="hairCounter">0</div>
@@ -143,7 +190,7 @@
             </div>
             <div class="counter-item">
                 <div class="counter-value" id="flowerCounter">0</div>
-                <div class="counter-label"><span style="color:#e83e8c; font-weight: bold;">Flower Designs</span></div>
+                <div class="counter-label"><span style="color:#6c2243; font-weight: bold;">Flower Designs</span></div>
             </div>
             <div class="counter-item">
                 <div class="counter-value" id="customerCounter">0</div>
@@ -152,48 +199,126 @@
         </div>
     </section>
 
-    <!-- Your available works content -->
-    </section>
-    <section id="works" class="work bg-light py-5 skills-padding text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <ol>
-                        <h2 class="text-center pb-4"><span style="color: black; font-weight: bold;">Discover</span><span
-                                style="color: #e83e8c; font-weight: bold;">Artistry</span></h2>
-                        <a href="https://www.instagram.com/kavi__makeover?igsh=OGY3MTU3OGY1Mw=="
-                            class="btn btn-dark btn-lg text-uppercase" download>Check Instagram</a>
-                    </ol>
-                </div>
-            </div>
+    <!-- instagram page -->
+
+    <section id="DiscoverArt">
+        <h2 class="heading">Discover<span>Artistry</span></h2><br><br>
+        <br>
+        <br><br>
+        <div class="D_A">
+            <a href="https://www.instagram.com/kavi__makeover?igsh=OGY3MTU3OGY1Mw=="
+                class="btn btn-dark btn-lg text-uppercase" target="_blank">Check Instagram</a>
         </div>
     </section>
 
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+        <div class="contact-section">
+            <div class="contact-container">
+                <p>
+                    <img src="images/Logo/telephone.png" alt="Phone">
+                    <a href="tel:+1234567890" class="contact-link">+916383272225</a>
+                </p>
+                <p>
+                    <img src="images/Logo/map.png" alt="Address">
+                    <a href="tel:+1234567890" class="contact-link">Salem Road, Namakkal, Tamilnadu-637001</a>
+                </p>
+                <p>
+                    <img src="images/Logo/instagram.png" alt="Instagram">
+                    <a href="https://www.instagram.com/kavi__makeover?igsh=OGY3MTU3OGY1Mw=="
+                        class="contact-link">@Kavi_Makeover</a>
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- footer design -->
     <footer class="footer">
-        <div class="contact-info">
-            <div class="center">
-                <p><strong>Designed by:</strong> <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk"
-                        style="color: #fff;">@vetrivel_kkd</a></p>
-            </div>
+        <div class="footer-text">
+            <p><strong>Developed by:</strong> <a href="https://www.instagram.com/vetrivel_kkd?igsh=MjFveHpwem93YmNk"
+                    style="color: #fff;">@vetrivel_kkd</a></p><br>
+            <p>Copyright &copy; 2024 | All Rights Reserved.</p>
         </div>
-    </footer>
-    <!-- Floating WhatsApp Chat Ball -->
-    <div class="floating-chat whatsapp">
-        <a href="https://wa.me/+916383272225?text=HI KAVINA" target="_blank" class="chat-link">
-            <img src="/img/WhatsApp_icon.png" alt="WhatsApp">
-        </a>
-    </div>
 
-    <!-- Floating Call Ball -->
-    <div class="floating-chat call">
-        <a href="tel:+916383272225" class="chat-link">
-            <img src="/img/phone-call.png" alt="Call">
-        </a>
-    </div>
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+
+        <!-- Floating WhatsApp Chat Ball -->
+        <div class="floating-chat whatsapp">
+            <a href="https://wa.me/+916383272225?text=Hi Kavina" target="_blank" class="chat-link">
+                <img class="floatlogo" src="images/Logo/whatsapp.png" alt="WhatsApp">
+            </a>
+        </div>
+
+        <!-- Floating Call Ball -->
+        <div class="floating-chat call">
+            <a href="tel:+916383272225" class="chat-link">
+                <img class="floatlogo" src="images/Logo/telephone.png" alt="Call">
+            </a>
+        </div>
+
+    </footer>
+
+
+
+
+
+    <script>
+        // Counter animation function
+        function animateCounter(id, start, end, duration) {
+            let obj = document.getElementById(id);
+            let current = start;
+            let range = end - start;
+            let increment = end > start ? 1 : -1;
+            let step = Math.abs(Math.floor(duration / range));
+            let timer = setInterval(function () {
+                current += increment;
+                obj.textContent = current;
+                if (current == end) {
+                    clearInterval(timer);
+                }
+            }, step);
+        }
+
+        // Trigger counters when the section is in view
+        let countersStarted = false;
+        const counterSection = document.querySelector('.counter');
+
+        function startCounters() {
+            if (!countersStarted) {
+                countersStarted = true;
+                animateCounter("makeupCounter", 0, 300, 3000);
+                animateCounter("hairCounter", 0, 100, 3000);
+                animateCounter("flowerCounter", 0, 100, 3000);
+                animateCounter("customerCounter", 0, 500, 3000);
+            }
+        }
+
+        // Intersection Observer to trigger counter when section is visible
+        const observer = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) {
+                startCounters();
+            }
+        }, {
+            threshold: 0.5 // Trigger when 50% of the section is visible
+        });
+
+        observer.observe(counterSection);
+    </script>
+
+
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="/JAVASCRIPT/script.js"></script>
 </body>
-<script src="/script.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
 
 </html>
