@@ -27,6 +27,7 @@
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <!-- <a href="#DiscoverGallery">DiscoverGallery</a> -->
         <a href="#DiscoverArt">DiscoverArt</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -69,7 +70,7 @@
 
 <!-- services section design -->
 <section class="services" id="services">
-    <h2 class="heading"><span>Services</span>Offered</h2>
+    <h2 class="heading">Services<span>Offered</span></h2>
 
     <div class="services-container">
         <div class="services-box">
@@ -199,6 +200,15 @@
     </div>
 </section>
 
+
+<!-- <section id="DiscoverGallery">  
+    <h2 class="heading1">Discover<span>Gallery</span></h2>
+    <div class="D_A">
+        <iframe src="https://drive.google.com/embeddedfolderview?id=10AnQMeWS2WcQD_iChD__4gRRfqtTn9UF#grid"
+            frameborder="0"></iframe>
+    </div>
+</section> -->
+
 <!-- instagram page -->
 
 <section id="DiscoverArt">
@@ -278,7 +288,11 @@
         let step = Math.abs(Math.floor(duration / range));
         let timer = setInterval(function () {
             current += increment;
-            obj.textContent = current;
+            if (current >= end) {
+                obj.textContent = end + "+";
+            } else {
+                obj.textContent = current;
+            }
             if (current == end) {
                 clearInterval(timer);
             }
