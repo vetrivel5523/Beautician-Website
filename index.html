@@ -40,14 +40,21 @@
 
 <!-- home section design -->
 <section class="home" id="home">
-    <div class="home-content"><br><br><br><br>
+    <div class="home-content"><br><br>
         <img class="bannermain" src="images/main banner-2.png" />
     </div>
-    <br><br><br>
-    
+
 </section>
-<h2 class="quote">"Makeup Should Never Hide Yourself It Should Be Used To Enhance Your Natural Beauty"</h2><br><br>
-<br><br><br><br><br><br><br><br>
+<Br><br>
+<div class="typing-container">
+    <h1 class="typing-text" id="typed-text"></h1>
+</div><br><br><br><br><br>
+<h2 class="quote">"Makeup Should Never Hide Yourself It Should Be Used To Enhance Your Natural Beauty"</h2>
+<br><br><br><br>
+
+
+
+
 
 <!-- about section design -->
 <section class="about" id="about">
@@ -351,6 +358,23 @@
             event.preventDefault();
         }
     }
+
+    const text = "❣️Welcome Beauties❣️";
+    let index = 0;
+    const element = document.getElementById('typed-text');
+
+    function type() {
+        if (index < text.length) {
+            element.innerHTML += text.charAt(index);
+            index++;
+            setTimeout(type, 200);
+        }
+    }
+
+    window.onload = () => {
+        type();
+    };
+
 </script>
 
 
