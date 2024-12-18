@@ -135,6 +135,17 @@ body {
     opacity: .9;
 }
 
+.heading {
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.quote {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
 #menu-icon {
     font-size: 3.6rem;
     color: var(--text-color);
@@ -186,10 +197,7 @@ span {
     width: 30vw;
 }
 
-.heading {
-    font-size: 4.5rem;
-    text-align: center;
-}
+
 
 .about-content h2 {
     text-align: left;
