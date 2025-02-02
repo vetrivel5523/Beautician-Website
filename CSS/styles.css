@@ -14,7 +14,7 @@
 :root {
     --bg-color: #fdfdfd;
     --text-color: #333;
-    --main-color: #6c2243;
+    --main-color: #9c5326;
     --white-color: #fdfdfd;
     --shadow-color: rgba(0, 0, 0, .2);
 }
@@ -38,40 +38,6 @@ html {
 body {
     background: var(--bg-color);
     color: var(--text-color);
-}
-
-/* Pre Loader */
-
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: #fff;
-    z-index: 9999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.loader {
-    border: 16px solid #fdfdfd;
-    border-top: 16px solid #6c2243;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 5s linear infinite;
-}
-
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 .header {
@@ -141,7 +107,7 @@ body {
 }
 
 .quote {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 2.0rem;
     text-align: center;
 }
@@ -191,7 +157,7 @@ span {
 
 .typing-text {
     font-size: 2.5rem;
-    color: #6c2243;
+    color: #9c5326;
     display: inline-block;
     white-space: nowrap;
     border-right: 3px solid transparent;
@@ -203,6 +169,7 @@ span {
     from {
         width: 0;
     }
+
     to {
         width: 16em;
     }
@@ -457,6 +424,87 @@ iframe:hover {
 }
 
 
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    .map-container iframe {
+        height: 250px;
+        /* Reduce map height on smaller screens */
+    }
+}
+
+/* Shop Timing Section */
+.shop-timing {
+    background-color: white;
+    padding: 40px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -40px;
+  }
+  
+  .shop-timing h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .timing-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .timing-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .timing-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .timing-card p {
+    font-size: 18px;
+    color: #777;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .timing-wrapper {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .timing-wrapper {
+      grid-template-columns: 1fr;
+    }
+  
+    .shop-timing h2 {
+      font-size: 28px;
+    }
+  
+    .timing-card h3 {
+      font-size: 20px;
+    }
+  
+    .timing-card p {
+      font-size: 16px;
+    }
+  }
+
 .footer {
     display: flex;
     justify-content: space-between;
@@ -563,9 +611,7 @@ iframe:hover {
     }
 }
 
-.hide-on-preload {
-    display: none;
-}
+
 
 
 /* BREAKPOINTS */
