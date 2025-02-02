@@ -416,7 +416,7 @@ iframe:hover {
 .contact {
     min-height: auto;
     padding-top: 5px;
-    padding-bottom: 8rem;
+    /* padding-bottom: 8rem; */
 }
 
 
@@ -486,7 +486,7 @@ iframe:hover {
     padding: 40px 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -150px;
+    margin-top: -90px;
     display: flex;
     justify-content: center;
     align-items: center;

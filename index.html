@@ -359,6 +359,7 @@
         }
     }
 
+    // Typing effect function
     const text = "Welcome To 2K_Bridal Studio";
     let index = 0;
     const element = document.getElementById('typed-text');
@@ -371,18 +372,17 @@
         }
     }
 
+    // Combined window.onload
     window.onload = () => {
-        type();
-    };
-
-
-    // Wait for the window to fully load before hiding the preloader
-    window.onload = function () {
         // Hide preloader
         document.getElementById('preloader').style.display = 'none';
         // Show website content
         document.getElementById('content').style.display = 'block';
+
+        // Start typing animation
+        type();
     };
+
 
 
 
