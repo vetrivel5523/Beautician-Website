@@ -30,12 +30,12 @@
 .spinner {
     border: 5px solid #f3f3f3;
     /* Light grey border */
-    border-top: 5px solid #ff002f;
+    border-top: 5px solid tomato;
     /* Light pink color for the spinner */
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    animation: spin 4s linear infinite;
+    animation: spin 3s linear infinite;
     /* Animation to make it spin */
 }
 
@@ -410,15 +410,14 @@ iframe:hover {
     width: 250px;
 }
 
-
 /* Contact Section Styles */
-
 .contact {
     min-height: auto;
-    padding-top: 5px;
-    /* padding-bottom: 8rem; */
+    /* padding-top: 20px; */
+    /* Adjusted padding top */
+    padding-bottom: 0px;
+    /* Added padding bottom */
 }
-
 
 .contact-section {
     display: flex;
@@ -435,7 +434,6 @@ iframe:hover {
     border-radius: 10px;
     text-align: center;
 }
-
 
 .contact-container p {
     font-size: 1em;
@@ -462,7 +460,6 @@ iframe:hover {
     color: var(--icon-color);
 }
 
-
 .map-container iframe {
     width: 100%;
     height: 350px;
@@ -473,10 +470,8 @@ iframe:hover {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-
     .map-container iframe {
         height: 250px;
-        /* Reduce map height on smaller screens */
     }
 }
 
@@ -486,19 +481,11 @@ iframe:hover {
     padding: 40px 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -90px;
+    margin-top: -50px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* Ensure the section takes full viewport height */
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    /* Adjust based on your layout */
-    padding: 0 20px;
 }
 
 .heading {
@@ -510,11 +497,8 @@ iframe:hover {
 .timing-wrapper {
     display: flex;
     justify-content: center;
-    /* Centers the card horizontally */
     align-items: center;
-    /* Centers the card vertically */
     height: 100%;
-    /* Ensures full height for centering */
 }
 
 .timing-card {
@@ -547,6 +531,38 @@ iframe:hover {
 
     .timing-card p {
         font-size: 16px;
+    }
+}
+
+/* Location Section Styles */
+.location {
+    min-height: auto;
+    padding-top: 50px;
+    /* Adjusted padding top */
+    padding-bottom: 40px;
+
+    margin-top: -100px;
+    /* Added padding bottom */
+}
+
+.location .heading {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .map-container iframe {
+        height: 250px;
     }
 }
 
