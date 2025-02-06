@@ -11,7 +11,6 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-/* Preloader Styles */
 #preloader {
     position: fixed;
     top: 0;
@@ -19,24 +18,19 @@
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.9);
-    /* Semi-transparent white */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    /* Ensure it stays on top */
 }
 
 .spinner {
     border: 5px solid #f3f3f3;
-    /* Light grey border */
     border-top: 5px solid tomato;
-    /* Light pink color for the spinner */
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    animation: spin 1s linear infinite;
-    /* Animation to make it spin */
+    animation: spin 2s linear infinite;
 }
 
 @keyframes spin {
@@ -308,16 +302,159 @@ span {
 }
 
 
-/* counter section  */
+/* Review Section Styles */
+.reviews-section {
+    padding: 8rem 0;
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+}
 
+.reviews-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.cta-section {
+    background: white;
+    padding: 4rem;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 150px;
+    height: 150px;
+    background: #9c5326;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.cta-section::after {
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    right: -30px;
+    width: 100px;
+    height: 100px;
+    background: #9c5326;
+    opacity: 0.1;
+    border-radius: 50%;
+}
+
+.cta-section h3 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.cta-section p {
+    font-size: 1.6rem;
+    color: #666;
+    margin-bottom: 3rem;
+    line-height: 1.6;
+    position: relative;
+    z-index: 1;
+}
+
+.review-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    background: #9c5326;
+    color: white !important;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+    border: 2px solid transparent;
+}
+
+.review-button i {
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.review-button:hover {
+    background: #7a3d1a;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(156, 83, 38, 0.2);
+}
+
+.cta-section p:last-child {
+    margin-top: 2rem;
+    font-size: 1.4rem;
+    color: #888;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .reviews-section {
+        padding: 5rem 0;
+    }
+
+    .cta-section {
+        padding: 3rem 2rem;
+        margin: 0 1.5rem;
+    }
+
+    .cta-section h3 {
+        font-size: 2.2rem;
+    }
+
+    .cta-section p {
+        font-size: 1.4rem;
+    }
+
+    .review-button {
+        padding: 1.2rem 2rem;
+        font-size: 1.4rem;
+    }
+
+    .cta-section::before,
+    .cta-section::after {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-section {
+        padding: 2.5rem 1.5rem;
+    }
+
+    .cta-section h3 {
+        font-size: 2rem;
+    }
+
+    .cta-section p {
+        font-size: 1.3rem;
+    }
+
+    .review-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+
+/* counter section  */
 
 .counter {
     text-align: center;
     padding: 50px 0;
     background-color: white;
 }
-
-
 
 .counter-section {
     display: flex;
@@ -413,7 +550,7 @@ iframe:hover {
 /* Contact Section Styles */
 .contact {
     min-height: auto;
-    /* padding-top: 20px; */
+    padding-top: 20px;
     /* Adjusted padding top */
     padding-bottom: 0px;
     /* Added padding bottom */
@@ -480,12 +617,11 @@ iframe:hover {
     background-color: white;
     padding: 40px 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: -50px;
+    margin-top: -40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 76vh;
 }
 
 .heading {
@@ -537,9 +673,9 @@ iframe:hover {
 /* Location Section Styles */
 .location {
     min-height: auto;
-    padding-top: 50px;
+    padding-top: 100px;
     /* Adjusted padding top */
-    padding-bottom: 40px;
+    /* padding-bottom: 40px; */
 
     margin-top: -100px;
     /* Added padding bottom */
