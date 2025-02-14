@@ -243,13 +243,18 @@ span {
     margin: 2rem 0 3rem;
 }
 
+/* Services Section */
 .services {
+    position: relative;
+    padding: 6rem 2rem;
     min-height: auto;
     padding-bottom: 10rem;
+    background-color: #ffffff;
 }
 
 .services h2 {
     margin-bottom: 5rem;
+    text-align: center;
 }
 
 .services .services-container {
@@ -261,30 +266,31 @@ span {
 }
 
 .services-container .services-box {
+    position: relative;
+    /* Ensure relative positioning for half-circle placement */
     flex: 1 1 30rem;
-    background: var(--bg-color);
+    background: #fdf3e7;
+    /* Subtle sand tone */
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
-    box-shadow: 0 .1rem .5rem var(--shadow-color);
+    box-shadow: 0 .1rem .5rem rgba(0, 0, 0, 0.1);
     text-align: center;
-    border-top: .6rem solid var(--main-color);
-    border-bottom: .6rem solid var(--main-color);
+    border-top: .6rem solid #8b5e3c;
+    border-bottom: .6rem solid #8b5e3c;
     transition: .5s ease;
+    overflow: hidden;
 }
 
 .services-container .services-box:hover {
-    box-shadow: 0 .1rem 2rem var(--shadow-color);
+    box-shadow: 0 .1rem 2rem rgba(0, 0, 0, 0.15);
     transform: scale(1.02);
 }
 
 .service-image {
     height: 220px;
     width: 200px;
-}
-
-.services-box i {
-    font-size: 7rem;
-    color: var(--main-color);
+    border-radius: 1rem;
+    object-fit: cover;
 }
 
 .services-box h3 {
@@ -293,17 +299,38 @@ span {
 }
 
 .services-box:hover h3 {
-    color: var(--main-color);
+    color: #8b5e3c;
 }
 
-.services-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+/* Decorative Half-Circles */
+.decorative-half-circle {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #8b5e3c;
+    /* Dark sand color */
+    opacity: 0.7;
+    pointer-events: none;
+    /* Prevent interaction */
+}
+
+.top-left {
+    width: 80px;
+    height: 80px;
+    top: -40px;
+    left: -40px;
+}
+
+.bottom-right {
+    width: 80px;
+    height: 80px;
+    bottom: -40px;
+    right: -40px;
 }
 
 
 /* Review Section Styles */
 .reviews-section {
+    padding-top: -50px;
     padding: 8rem 0;
     background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
 }
@@ -358,7 +385,7 @@ span {
 
 .cta-section p {
     font-size: 1.6rem;
-    color: #666;
+    color: black;
     margin-bottom: 3rem;
     line-height: 1.6;
     position: relative;
@@ -395,7 +422,7 @@ span {
 .cta-section p:last-child {
     margin-top: 2rem;
     font-size: 1.4rem;
-    color: #888;
+    color: black;
 }
 
 /* Mobile Responsive */
