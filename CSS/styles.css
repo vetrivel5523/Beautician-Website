@@ -25,7 +25,7 @@
 }
 
 .spinner {
-    border: 5px solid #f3f3f3;
+    border: 8px solid #f3f3f3;
     border-top: 5px solid tomato;
     border-radius: 50%;
     width: 60px;
@@ -684,6 +684,11 @@ iframe:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+
+    .shop-timing{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
     .heading {
         font-size: 28px;
     }
@@ -700,7 +705,7 @@ iframe:hover {
 /* Location Section Styles */
 .location {
     min-height: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     /* Adjusted padding top */
     /* padding-bottom: 40px; */
 
