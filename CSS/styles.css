@@ -306,7 +306,7 @@ span {
 .decorative-half-circle {
     position: absolute;
     border-radius: 50%;
-    background-color: #8b5e3c;
+    /* background-color: #8b5e3c; */
     /* Dark sand color */
     opacity: 0.7;
     pointer-events: none;
